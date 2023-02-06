@@ -1,6 +1,6 @@
 ﻿namespace BuberDinner.Api.Common.Http;
 
-public class HttpContextItemKeys
+public static class HttpContextItemKeys
 {
-    
+    public const string Errors = "errors";
 }

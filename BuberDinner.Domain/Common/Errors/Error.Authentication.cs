@@ -2,10 +2,12 @@
 
 namespace BuberDinner.Domain.Common.Errors;
 
-public static class Errors
+public static partial class Errors
 {
-    public static class User
+    public static class Authentication
     {
-        public static Error DuplicateEmail => Error.Conflict(code: "User.DuplicateEmail", "Duplicate Email");
+        public static Error InvalidCredentials => Error.Validation(
+            "Auth.InvalidCredentials",
+            "Invalid credentials.");
     }
 }
